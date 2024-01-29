@@ -1,0 +1,73 @@
+#root {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navigation {
+  border-bottom: 1px solid;
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.ingredients-and-measures {
+  columns: 2;
+  clear: right;
+  max-width: fit-content;
+  min-width: 260px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-transform: capitalize;
+  &.active {
+    color: red;
+  }
+}
+
+li {
+  min-height: 1px;
+}
+
+.cocktail-detail {
+  padding: 24px 0;
+}
+
+@media screen and (min-width: 600px) {
+  #root {
+    flex-direction: row;
+  }
+
+  .navigation {
+    min-width: 200px;
+    position: fixed;
+    border-bottom: unset;
+  }
+
+  .drinks {
+    padding-left: 200px;
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  img {
+    float: right;
+    padding: 0 0 20px 20px
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+}
