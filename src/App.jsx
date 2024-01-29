@@ -5,7 +5,8 @@ import {
   NavLink,
   RouterProvider,
   Navigate,
-  Outlet
+  Outlet,
+  ScrollRestoration
 } from "react-router-dom";
 
 import CocktailDetail from './components/CocktailDetail';
@@ -54,6 +55,7 @@ function Root() {
         </ul>
       </nav>
       <Outlet />
+      <ScrollRestoration />
     </>
   )
 }
